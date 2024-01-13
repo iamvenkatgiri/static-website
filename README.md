@@ -16,7 +16,8 @@ From AWS,
 From Hostinger,
 ![image](https://github.com/iamvenkatgiri/static-website/assets/156535839/1c3011fe-5878-4296-ab10-bae4db5361c3)
 
-3)	The domain name can be your net-id or full name. 
+3)	The domain name can be your net-id or full name.
+   
           a)On the hostinger.com homepage, choose Domains from the menu options.
 <img width="470" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/b304a4c8-21b6-47c9-a5de-0b8fa6f88a32">
 
