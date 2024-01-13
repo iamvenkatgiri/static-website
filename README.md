@@ -11,10 +11,12 @@ Pre-requisites:
 2)	Purchase a domain from hostinger.com as they offer affordable domains when you compare with AWS domain name services.
    
 From AWS,
-![image](https://github.com/iamvenkatgiri/static-website/assets/156535839/47c42df3-7f58-4a53-b085-ba9026d70bbf)
+<img width="456" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/4a55ce4c-5eff-46f9-a6fb-f3c2691f9bd7">
+
 
 From Hostinger,
-![image](https://github.com/iamvenkatgiri/static-website/assets/156535839/1c3011fe-5878-4296-ab10-bae4db5361c3)
+<img width="457" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/38de1179-40fc-4248-a475-e6a6cb6a5a7f">
+
 
 3)	The domain name can be your net-id or full name.
    
