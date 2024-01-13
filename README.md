@@ -1,6 +1,6 @@
 # static-website
 Made use of AWS services like  S3, Certificate Manager, Cloud Front, Route53. Also used Hostinger.com to purchase the domain
-# Agenda:  
+## Agenda:  
 <img width="470" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/66f8fd9a-4bd8-4805-8e60-7f8580b56119">
 
 1.	We are creating a static website that is fully functional with global reach. The website can be your portfolio or any other website. The choice is yours. 
@@ -34,17 +34,17 @@ From Hostinger,
 
 ## Steps:
 
-# 1.Static Website.
+### 1.Static Website.
    a)Create a static website using s3. 
    b)The name of the bucket can be domain name that you bought from hostinger. For Ex: The bucket name is: venkatgirisasanapuri.cloud
    Expectation: When I hit the static URL, I can see a webpage in the browser as shown below.
    
 <img width="470" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/f7bcafa4-b56a-4772-9093-826085268e13">
 
-# 2.Create a certificate from the Amazon Certificate Manager for the DNS purchased at hostinger website.
-# 3.Create a Cloudfront Distribution.
-# 4.Create a hosted zone in the Route 53 and do the necessary steps to accomplish the project.
+### 2.Create a certificate from the Amazon Certificate Manager for the DNS purchased at hostinger website.
+### 3.Create a Cloudfront Distribution.
+### 4.Create a hosted zone in the Route 53 and do the necessary steps to accomplish the project.
 
-# Final Output:
+## Final Output:
 
 <img width="470" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/27d791c3-94d5-4d7e-8f63-26e86e55ad2e">
