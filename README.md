@@ -18,20 +18,20 @@ From Hostinger,
 
 3)	The domain name can be your net-id or full name.
    
-          a)On the hostinger.com homepage, choose Domains from the menu options.
+   a)On the hostinger.com homepage, choose Domains from the menu options.
 <img width="470" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/b304a4c8-21b6-47c9-a5de-0b8fa6f88a32">
 
-          b)On the search bar, type your full name and search for the available domains. You can choose the cheapest option available. I would go with something that is cheaper and meaningful.
+   b)On the search bar, type your full name and search for the available domains. You can choose the cheapest option available. I would go with something that is cheaper and meaningful.
 <img width="470" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/b49b7a5c-995e-44b8-9119-3102260a547d">
 
-          c)Choose one and add to cart. Verify that the period chosen is 1 year. Create the Hostinger account. If we use the same email which was used to create AWS account, we will have an additional option to do the email validation for the AWS Certificate Manager. Make the payment and That’s it. You owned a domain name now.
+   c)Choose one and add to cart. Verify that the period chosen is 1 year. Create the Hostinger account. If we use the same email which was used to create AWS account, we will have an additional option to do the email validation for the AWS Certificate Manager. Make the payment and That’s it. You owned a domain name now.
 
 ## Steps:
 
 # 1.Static Website.
-           a)Create a static website using s3. 
-           b)The name of the bucket can be domain name that you bought from hostinger. For Ex: The bucket name is: venkatgirisasanapuri.cloud
-           Expectation: When I hit the static URL, I can see a webpage in the browser as shown below.
+   a)Create a static website using s3. 
+   b)The name of the bucket can be domain name that you bought from hostinger. For Ex: The bucket name is: venkatgirisasanapuri.cloud
+   Expectation: When I hit the static URL, I can see a webpage in the browser as shown below.
 <img width="470" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/f7bcafa4-b56a-4772-9093-826085268e13">
 # 2.Create a certificate from the Amazon Certificate Manager for the DNS purchased at hostinger website.
 # 3.Create a Cloudfront Distribution.
