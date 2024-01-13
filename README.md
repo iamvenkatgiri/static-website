@@ -8,8 +8,8 @@ Made use of AWS services like  S3, Certificate Manager, Cloud Front, Route53. Al
 
 Pre-requisites:
 1)	AWS Account is Required. If you have one already, use it. Otherwise, create an account with UTD email address or with google mail that has your full name (Firstname + LastName). The same account can be used for the entire course. 
-2)	Purchase a domain from hostinger.com as they offer affordable domains when you compare with AWS domain name services. 
-
+2)	Purchase a domain from hostinger.com as they offer affordable domains when you compare with AWS domain name services.
+   
 From AWS,
 ![image](https://github.com/iamvenkatgiri/static-website/assets/156535839/47c42df3-7f58-4a53-b085-ba9026d70bbf)
 
