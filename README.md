@@ -14,7 +14,6 @@ From AWS,
 
 <img width="456" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/4a55ce4c-5eff-46f9-a6fb-f3c2691f9bd7">
 
-
 From Hostinger,
 
 <img width="457" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/38de1179-40fc-4248-a475-e6a6cb6a5a7f">
@@ -70,35 +69,37 @@ From Hostinger,
 
 ### 4.Create the Cloudfront Distribution.
 
-   a)Select the S3 bucket, and in the Origin access option, select Origin access control settings option which is the recommended one and Click Create control setting option. We must copy the bucket policy and paste it in the s3 permissions bucket policy settings.
+   a)Select the S3 bucket, and in the Origin access option, select Origin access control settings option which is the recommended one and Click Create control setting option. 
       
 <img width="470" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/4b8857fc-08dd-4109-9c4d-95ed8ac194cb">
 
+   b)We must copy the bucket policy and paste it in the s3 permissions bucket policy settings.
+   
 <img width="470" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/af59d8e3-f900-4165-b8ac-379a09ffa6e4">
 
-   b)Change the Viewer protocol policy to Redirect HTTP to HTTPS.
+   c)Change the Viewer protocol policy to Redirect HTTP to HTTPS.
    
-   c)Under cache policy, choose Caching Optimized.
+   d)Under cache policy, choose Caching Optimized.
 
 <img width="470" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/36f8eb64-6b02-4e64-9c47-ea1bf274960e">
 
-   d)Do not enable security protections under WAF.
+   e)Do not enable security protections under WAF.
    
-   e)Choose Custom SSL certificate that was created earlier in the Certificate Manager option.
+   f)Choose Custom SSL certificate that was created earlier in the Certificate Manager option.
 
 <img width="470" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/618333f3-f6e5-4015-a048-2e6b89f313b2">
 
-   f)Under Default root object, add index.html file.
+   g)Under Default root object, add index.html file.
    
-   g)Scroll down and create the distribution. Once the distribution is created, Copy the policy and update the s3 bucket policy yet again.
+   h)Scroll down and create the distribution. Once the distribution is created, Copy the policy and update the s3 bucket policy yet again.
 
 <img width="470" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/5cda3b76-6af3-4fd6-8d8b-283ddb2b4297">
 
-   h) Screenshot of the updated bucket policy.
+   i) Screenshot of the updated bucket policy.
    
 <img width="470" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/bfff629e-3369-4fd5-992d-7a4741eea661">
 
-   i)Once the bucket policy is updated, see that the website is accessible with the Cloudfront distribution.
+   j)Once the bucket policy is updated, see that the website is accessible with the Cloudfront distribution.
 
 <img width="468" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/9c02751f-a93e-449b-931b-318e0931b0ae">
 
