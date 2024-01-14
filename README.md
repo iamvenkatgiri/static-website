@@ -21,25 +21,25 @@ From Hostinger,
 
 3.	The domain name can be your net-id or full name.
    
-   a)On the hostinger.com homepage, choose **Domains** from the menu options.
+   a) On the hostinger.com homepage, choose **Domains** from the menu options.
    
 <img width="470" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/b304a4c8-21b6-47c9-a5de-0b8fa6f88a32">
 
-   b)On the search bar, type your full name and search for the available domains. You can choose the cheapest option available. I would go with something that is cheaper and meaningful.
+   b) On the search bar, type your full name and search for the available domains. You can choose the cheapest option available. I would go with something that is cheaper and meaningful.
    
 <img width="470" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/b49b7a5c-995e-44b8-9119-3102260a547d">
 
-   c)Choose one and **add to cart**. Verify that the period chosen is 1 year. Create the Hostinger account. If we use the same email which was used to create AWS account, we will have an additional option to do the email validation for the AWS Certificate Manager. Make the payment and That’s it. You owned a domain name now.
+   c) Choose one and **add to cart**. Verify that the period chosen is 1 year. Create the Hostinger account. If we use the same email which was used to create AWS account, we will have an additional option to do the email validation for the AWS Certificate Manager. Make the payment and That’s it. You owned a domain name now.
 
 ## Steps:
 
 ### 1.Static Website.
 
-   a)Create an S3 bucket with the domain name. Ex: **venkatagirisasanapuri.cloud**. Leave the other options to the default.
+   a) Create an S3 bucket with the domain name. Ex: **venkatagirisasanapuri.cloud**. Leave the other options to the default.
    
-   b)Enable **Static Website Hosting**. Scroll down to the bottom of the **Properties** tab and enable it. Make sure to change the name of the **Index document**. (Ex: index.html)
+   b) Enable **Static Website Hosting**. Scroll down to the bottom of the **Properties** tab and enable it. Make sure to change the name of the **Index document**. (Ex: index.html)
    
-   c)Add the bucket policy and uncheck the **Block Public access** option. We will have to change the bucket policy once the Cloudfront distribution is created to make sure the website is accessible only through domain name.
+   c) Add the bucket policy and uncheck the **Block Public access** option. We will have to change the bucket policy once the Cloudfront distribution is created to make sure the website is accessible only through domain name.
 
 <img width="294" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/2e0aaf0f-26fb-43b5-9a41-dd4b9196be36">
       
@@ -49,11 +49,11 @@ From Hostinger,
 
 ### 2.Create a certificate from the AWS Certificate Manager.
 
-   a)Request a certificate from the AWS Certificate Manager with the domain name.
+   a) Request a certificate from the AWS Certificate Manager with the domain name.
    
-   b)Choose DNS validation method as it is a flexible option to update the CNAME. Leave rest of the options to default and Request for the certificate.
+   b) Choose DNS validation method as it is a flexible option to update the CNAME. Leave rest of the options to default and Request for the certificate.
    
-   c)Once the certificate is created, validation needs to be done to prove the ownership of the domain name. We will do it in the upcoming steps.
+   c) Once the certificate is created, validation needs to be done to prove the ownership of the domain name. We will do it in the upcoming steps.
 
 <img width="470" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/d142c19d-8beb-4ebd-b036-43b114030684">
 
@@ -61,25 +61,25 @@ From Hostinger,
 
 ### 3.Create a hosted zone in the Route 53.
 
-   a)Enter the Domain name (venkatagirisasanapuri.cloud) and Create the hosted zone. Once the zone is created, go the Certificate Manager. We have to copy the CNAME name and CNAME value by selecting **Create records in Route 53 option**. 
+   a) Enter the Domain name (venkatagirisasanapuri.cloud) and Create the hosted zone. Once the zone is created, go the Certificate Manager. We have to copy the CNAME name and CNAME value by selecting **Create records in Route 53 option**. 
    
-   b)We will have to update the Hosted zone by adding the A record type, once the Cloudfront Distribution is created.
+   b) We will have to update the Hosted zone by adding the A record type, once the Cloudfront Distribution is created.
 
 <img width="470" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/6710823c-0513-4d5d-9a60-1a3aef568ce1">
 
 ### 4.Create the Cloudfront Distribution.
 
-   a)Select the S3 bucket, and in the Origin access option, select Origin access control settings option which is the recommended one and Click **Create control setting** option. 
+   a) Select the S3 bucket, and in the Origin access option, select Origin access control settings option which is the recommended one and Click **Create control setting** option. 
       
 <img width="470" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/4b8857fc-08dd-4109-9c4d-95ed8ac194cb">
 
-   b)By selecting the control settings option, we are updating the policy in the s3 bucket policy.
+   b) By selecting the control settings option, we are updating the policy in the s3 bucket policy.
    
 <img width="470" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/af59d8e3-f900-4165-b8ac-379a09ffa6e4">
 
-   c)Change the Viewer protocol policy to **Redirect HTTP to HTTPS**.
+   c) Change the Viewer protocol policy to **Redirect HTTP to HTTPS**.
    
-   d)Under cache policy, choose Caching Optimized.
+   d) Under cache policy, choose Caching Optimized.
 
 <img width="470" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/36f8eb64-6b02-4e64-9c47-ea1bf274960e">
 
