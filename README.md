@@ -83,15 +83,15 @@ From Hostinger,
 
 <img width="470" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/36f8eb64-6b02-4e64-9c47-ea1bf274960e">
 
-   e)Do not enable security protections under WAF.
+   e) Do not enable security protections under WAF.
    
-   f)Choose Custom SSL certificate that was created earlier in the Certificate Manager option.
+   f) Choose Custom SSL certificate that was created earlier in the Certificate Manager option.
 
 <img width="470" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/618333f3-f6e5-4015-a048-2e6b89f313b2">
 
-   g)Under **Default root object**, add index.html file.
+   g) Under **Default root object**, add index.html file.
    
-   h)Scroll down and create the distribution. Once the distribution is created, Copy the policy and update the s3 bucket policy **yet again**.
+   h) Scroll down and create the distribution. Once the distribution is created, Copy the policy and update the s3 bucket policy **yet again**.
 
 <img width="470" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/5cda3b76-6af3-4fd6-8d8b-283ddb2b4297">
 
@@ -99,13 +99,13 @@ From Hostinger,
    
 <img width="470" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/bfff629e-3369-4fd5-992d-7a4741eea661">
 
-   j)Once the bucket policy is updated, see that the website is accessible with the Cloudfront distribution.
+   j) Once the bucket policy is updated, see that the website is accessible with the Cloudfront distribution.
 
 <img width="468" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/9c02751f-a93e-449b-931b-318e0931b0ae">
 
 ### 5.Update the Route 53 records.
 
-   a)Now, we have to create a record in the hosted zone created earlier. Select the **Record type**, A and turn on the **Alias** option. Under Route traffic, we have to select Cloudfront from the first drop down and then select the Cloudfront distribution.
+   a) Now, we have to create a record in the hosted zone created earlier. Select the **Record type**, A and turn on the **Alias** option. Under Route traffic, we have to select Cloudfront from the first drop down and then select the Cloudfront distribution.
 
 <img width="470" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/0add1022-29ed-4fe0-8251-4af71cdcb218">
 
