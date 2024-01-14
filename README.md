@@ -8,7 +8,7 @@ Made use of AWS services like  S3, Certificate Manager, Cloud Front, Route53. Al
 
 Pre-requisites:
 1)	AWS Account is Required. If you have one already, use it. Otherwise, create an account with AWS [https://portal.aws.amazon.com/billing/signup#/start/email](https://portal.aws.amazon.com/billing/signup#/start/email)
-2)	Purchase a domain from hostinger.com as they offer affordable domains when you compare with AWS domain name services.
+2)	Purchase a domain from [hostinger.com](https://www.hostinger.com/) as they offer affordable domains when you compare with AWS domain name services.
    
 From AWS,
 
