@@ -7,8 +7,8 @@ Made use of AWS services like  S3, Certificate Manager, Cloud Front, Route53. Al
 2.	We must use all the above AWS services as shown in the diagram for this project. For the Domain Names, we are using hostinger.com. 
 
 Pre-requisites:
-1)	AWS Account is Required. If you have one already, use it. Otherwise, create an account with AWS [https://portal.aws.amazon.com/billing/signup#/start/email](https://portal.aws.amazon.com/billing/signup#/start/email)
-2)	Purchase a domain from [hostinger.com](https://www.hostinger.com/) as they offer affordable domains when you compare with AWS domain name services.
+1.	AWS Account is Required. If you have one already, use it. Otherwise, create an account with AWS [https://portal.aws.amazon.com/billing/signup#/start/email](https://portal.aws.amazon.com/billing/signup#/start/email)
+2.	Purchase a domain from [hostinger.com](https://www.hostinger.com/) as they offer affordable domains when you compare with AWS domain name services.
    
 From AWS,
 
@@ -20,7 +20,7 @@ From Hostinger,
 <img width="457" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/38de1179-40fc-4248-a475-e6a6cb6a5a7f">
 
 
-3)	The domain name can be your net-id or full name.
+3.	The domain name can be your net-id or full name.
    
    a)On the hostinger.com homepage, choose Domains from the menu options.
    
@@ -50,7 +50,7 @@ From Hostinger,
 
       a)	Request a certificate from the AWS Certificate Manager with the domain name.
       b)	Choose DNS validation method as it is a flexible option to update the CNAME. Leave rest of the options to default and Request for the certificate.
-      c)	 Once the certificate is created, validation needs to be done to prove the ownership of the domain name. We will do it in the upcoming steps.
+      c)	Once the certificate is created, validation needs to be done to prove the ownership of the domain name. We will do it in the upcoming steps.
 
 <img width="470" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/d142c19d-8beb-4ebd-b036-43b114030684">
 
