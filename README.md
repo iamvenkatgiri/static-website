@@ -73,7 +73,7 @@ From Hostinger,
       
 <img width="470" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/4b8857fc-08dd-4109-9c4d-95ed8ac194cb">
 
-   b)We must copy the bucket policy and paste it in the s3 permissions bucket policy settings.
+   b)By selecting the control settings option, we are updating the policy in the s3 bucket policy.
    
 <img width="470" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/af59d8e3-f900-4165-b8ac-379a09ffa6e4">
 
