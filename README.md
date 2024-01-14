@@ -94,6 +94,7 @@ From Hostinger,
 
 <img width="470" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/5cda3b76-6af3-4fd6-8d8b-283ddb2b4297">
 
+
 <img width="470" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/bfff629e-3369-4fd5-992d-7a4741eea661">
 
    h)Once the bucket policy is updated, see that the website is accessible with the Cloudfront distribution.
