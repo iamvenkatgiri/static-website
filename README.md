@@ -36,9 +36,9 @@ From Hostinger,
 
 ### 1.Static Website.
 
-      a)Create an S3 bucket with the domain name. Ex: venkatagirisasanapuri.cloud. Leave the other options to the default.
-      b)Enable Static Website Hosting. Scroll down to the bottom of the Properties tab and enable it. Make sure to change the name of the Index document. (Ex: index.html)
-      c)Add the bucket policy and uncheck the Block Public access option. We will have to change the bucket policy once the Cloudfront distribution is created to make sure the website is accessible only through domain name.
+   a)Create an S3 bucket with the domain name. Ex: venkatagirisasanapuri.cloud. Leave the other options to the default.
+   b)Enable Static Website Hosting. Scroll down to the bottom of the Properties tab and enable it. Make sure to change the name of the Index document. (Ex: index.html)
+   c)Add the bucket policy and uncheck the Block Public access option. We will have to change the bucket policy once the Cloudfront distribution is created to make sure the website is accessible only through domain name.
 
 <img width="294" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/2e0aaf0f-26fb-43b5-9a41-dd4b9196be36">
       
@@ -48,9 +48,9 @@ From Hostinger,
 
 ### 2.Create a certificate from the AWS Certificate Manager.
 
-      a)Request a certificate from the AWS Certificate Manager with the domain name.
-      b)Choose DNS validation method as it is a flexible option to update the CNAME. Leave rest of the options to default and Request for the certificate.
-      c)Once the certificate is created, validation needs to be done to prove the ownership of the domain name. We will do it in the upcoming steps.
+   a)Request a certificate from the AWS Certificate Manager with the domain name.
+   b)Choose DNS validation method as it is a flexible option to update the CNAME. Leave rest of the options to default and Request for the certificate.
+   c)Once the certificate is created, validation needs to be done to prove the ownership of the domain name. We will do it in the upcoming steps.
 
 <img width="470" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/d142c19d-8beb-4ebd-b036-43b114030684">
 
@@ -58,43 +58,43 @@ From Hostinger,
 
 ### 3.Create a hosted zone in the Route 53.
 
-      a)Enter the Domain name (venkatagirisasanapuri.cloud) and Create the hosted zone. Once the zone is created, go the Certificate Manager. We have to copy the CNAME name and CNAME value by selecting Create records in Route 53 option. 
-      b)We will have to update the Hosted zone by adding the A record type, once the Cloudfront Distribution is created.
+   a)Enter the Domain name (venkatagirisasanapuri.cloud) and Create the hosted zone. Once the zone is created, go the Certificate Manager. We have to copy the CNAME name and CNAME value by selecting Create records in Route 53 option. 
+   b)We will have to update the Hosted zone by adding the A record type, once the Cloudfront Distribution is created.
 
 <img width="470" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/6710823c-0513-4d5d-9a60-1a3aef568ce1">
 
 ### 4.Create the Cloudfront Distribution.
 
-      a)Select the S3 bucket, and in the Origin access option, select Origin access control settings option which is the recommended one and Click Create control setting option. We must copy the bucket policy and paste it in the s3 permissions bucket policy settings.
+   a)Select the S3 bucket, and in the Origin access option, select Origin access control settings option which is the recommended one and Click Create control setting option. We must copy the bucket policy and paste it in the s3 permissions bucket policy settings.
       
 <img width="470" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/4b8857fc-08dd-4109-9c4d-95ed8ac194cb">
 
 <img width="470" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/af59d8e3-f900-4165-b8ac-379a09ffa6e4">
 
-      b)Change the Viewer protocol policy to Redirect HTTP to HTTPS.
-      c)Under cache policy, choose Caching Optimized.
+   b)Change the Viewer protocol policy to Redirect HTTP to HTTPS.
+   c)Under cache policy, choose Caching Optimized.
 
 <img width="470" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/36f8eb64-6b02-4e64-9c47-ea1bf274960e">
 
-      d)Do not enable security protections under WAF.
-      e)Choose Custom SSL certificate that was created earlier in the Certificate Manager option.
+   d)Do not enable security protections under WAF.
+   e)Choose Custom SSL certificate that was created earlier in the Certificate Manager option.
 
 <img width="470" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/618333f3-f6e5-4015-a048-2e6b89f313b2">
 
-      f)Under Default root object, add index.html file.
-      g)Scroll down and create the distribution. Once the distribution is created, Copy the policy and update the s3 bucket policy yet again.
+   f)Under Default root object, add index.html file.
+   g)Scroll down and create the distribution. Once the distribution is created, Copy the policy and update the s3 bucket policy yet again.
 
 <img width="470" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/5cda3b76-6af3-4fd6-8d8b-283ddb2b4297">
 
 <img width="470" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/bfff629e-3369-4fd5-992d-7a4741eea661">
 
-      h)Once the bucket policy is updated, see that the website is accessible with the Cloudfront distribution.
+   h)Once the bucket policy is updated, see that the website is accessible with the Cloudfront distribution.
 
 <img width="468" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/9c02751f-a93e-449b-931b-318e0931b0ae">
 
 ### 5.Update the Route 53 records.
 
-      a)Now, we have to create a record in the hosted zone created earlier. Select the Record type, A and turn on the Alias option. Under Route traffic, we have to select Cloudfront from the first drop down and then select the Cloudfront distribution.
+   a)Now, we have to create a record in the hosted zone created earlier. Select the Record type, A and turn on the Alias option. Under Route traffic, we have to select Cloudfront from the first drop down and then select the Cloudfront distribution.
 
 <img width="470" alt="image" src="https://github.com/iamvenkatgiri/static-website/assets/156535839/0add1022-29ed-4fe0-8251-4af71cdcb218">
 
