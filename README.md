@@ -61,7 +61,7 @@ From Hostinger,
 
 ### 3.Create a hosted zone in the Route 53.
 
-   a) Enter the Domain name (venkatagirisasanapuri.cloud) and Create the hosted zone. Once the zone is created, go the Certificate Manager. We have to copy the CNAME name and CNAME value by selecting **Create records in Route 53 option**. 
+   a) Enter the Domain name (venkatagirisasanapuri.cloud) and Create the hosted zone. Once the zone is created, go the **Certificate Manager**. We have to copy the CNAME name and CNAME value by selecting **Create records in Route 53 option**. 
    
    b) We will have to update the Hosted zone by adding the A record type, once the Cloudfront Distribution is created.
 
