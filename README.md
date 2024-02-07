@@ -35,7 +35,7 @@ From Hostinger,
 
 ### 1.Static Website.
 
-   a) Create an S3 bucket with the domain name. Ex: **venkatagirisasanapuri.cloud**. Leave the other options to the default.
+   a) Create an S3 bucket with the domain name. Ex: **venkatagirisasanapuri.cloud**. Leave the other options to the default while you are creating the bucket.
    
    b) Enable **Static Website Hosting**. Scroll down to the bottom of the **Properties** tab and enable it. Make sure to change the name of the **Index document**. (Ex: index.html)
    
